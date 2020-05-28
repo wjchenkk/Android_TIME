@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#0a3f69"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+        <!--<ImageView-->
+            <!--android:id="@+id/daiban_view"-->
+            <!--android:layout_width="140dp"-->
+            <!--android:layout_height="150dp"-->
+            <!--android:layout_marginLeft="135dp"-->
+            <!--android:layout_marginTop="170dp"-->
+            <!--android:src="@drawable/tip" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@id/daiban_view"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginLeft="110dp"-->
+            <!--android:layout_marginTop="7dp"-->
+            <!--android:text=" 待办是指您要专注的事情，\n       右上角+号添加待办~\n-->
+<!--长按待办删除，点击开始\n           按钮来专注计时" />-->
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar">
+
+            <TextView
+                android:id="@+id/list"
+                android:layout_below="@id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+
+            <ListView
+                android:layout_below="@id/list"
+                android:layout_margin="10dp"
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:dividerHeight="5dp"
+                android:divider="@drawable/list_d"
+                />
+
+        </LinearLayout>
+
+
+
+</RelativeLayout>

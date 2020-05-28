@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonActivity">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/daiban_view"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_marginLeft="135dp"-->
+        <!--android:layout_marginTop="170dp"-->
+        <!--android:src="@drawable/tip" />-->
+
+    <!--<TextView-->
+        <!--android:layout_width="401dp"-->
+        <!--android:layout_height="216dp"-->
+        <!--android:layout_below="@id/daiban_view"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginLeft="80dp"-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:text="当前没有待办集，点击右上角\n              +号新建一个吧~\n-->
+<!--待办集是待办的集合，比如您\n可以建一个待办集名为“学习”,\n然后将“学习英语”、“学习\n         物理”等待办加入进去"-->
+        <!--android:textSize="24sp" />-->
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#0a3f69"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:divider="@null" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
