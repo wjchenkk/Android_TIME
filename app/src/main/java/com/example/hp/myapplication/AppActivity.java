@@ -43,7 +43,12 @@ public class AppActivity extends AppCompatActivity{
         myAdapter=new MyAdapter(applicationInfoList);
         mlistview.setAdapter(myAdapter);
         myAdapter.notifyDataSetChanged();
-
+        mlistview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                doStartApplicationWithPackageName(applicationInfoList.get(position).getPackageName());
+            }
+        });
         //listView长按事件
         mlistview.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
 
