@@ -94,7 +94,7 @@ public class MainActivity extends AppCompatActivity implements LoaderCallbacks<C
             public void onClick(View view) {
                 Toast.makeText(MainActivity.this,
                         "开始注册", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(MainActivity.this, AppActivity.class);
+                Intent intent = new Intent(MainActivity.this, PersActivity.class);
                 startActivity(intent);
                 MainActivity.this.finish();
             }

@@ -40,7 +40,8 @@
         <activity android:name=".showActivity" />
         <activity android:name=".TeamActivity" />
         <activity android:name=".TeamsListActivity" />
-        <activity android:name=".AppActivity"></activity>
+        <activity android:name=".AppActivity" />
+        <activity android:name=".PersActivity"></activity>
     </application>
 
 </manifest>
